@@ -49,8 +49,8 @@ function addTodo(e){
 
 }
 
-function deleteCheck(ev){
-    const item = ev.target;
+function deleteCheck(e){
+    const item = e.target;
 
     // Delete Task
     if(item.classList[0] === "trash-button"){
@@ -64,4 +64,29 @@ function deleteCheck(ev){
     if(item.classList[0] === "completed-button"){
         item.parentElement.classList.toggle("completed");
     }
+}
+
+function filterTodo (e){
+    const todos = todoList.childNodes;
+    todos.forEach(function(){
+        switch(e.target){
+            case "all":
+                todo.style.display = "flex";
+                break
+            case "completed":
+                if(todo.classList.contains("completed")){
+                    todo.style.display = "flex";
+                } else { 
+                    todo.style.display = "none"
+                }
+                break
+            case "uncomplete":
+                if(!todo.classList.contains("completed")){
+                    todo.style.display = "flex";
+                } else { 
+                    todo.style.display = "none"
+                }
+                break
+        }
+    })
 }
