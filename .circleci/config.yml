@@ -6,7 +6,7 @@ version: 2.1
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
   
-  build:
+  build1:
     docker:
       - image: circleci/node:stable
     
@@ -40,4 +40,4 @@ workflows:
 
   JSTest-workflow:
     jobs:
-      - build
+      - build1
