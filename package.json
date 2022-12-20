@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
+    "jest": "^29.3.1"
+  },
+  "name": "todolist",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "verbose": true
+ },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesAlaric/TodoList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesAlaric/TodoList/issues"
+  },
+  "homepage": "https://github.com/JamesAlaric/TodoList#readme",
+  "description": ""
+}
