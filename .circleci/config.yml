@@ -10,7 +10,7 @@ jobs:
     docker:
       - image: circleci/node:stable
     
-    working_directory: ~/TodoList
+    working_directory: ~/project
 
     steps:
       - checkout
